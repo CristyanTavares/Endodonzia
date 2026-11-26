@@ -190,7 +190,7 @@
           '<button type="button" class="gdpr-close" id="gdpr-modal-close" aria-label="Chiudi informativa">&times;</button>' +
         '</div>' +
         '<h3>1. Titolare e Trattamento dei Dati (Reg. UE 2016/679 - GDPR)</h3>' +
-        '<p>I dati personali forniti volontariamente al momento dell’acquisto (es. nome, indirizzo email, numero WhatsApp per la consegna dei file digitali) sono trattati esclusivamente per l’evasione dell’ordine, l’assistenza clienti e gli adempimenti di legge, nel pieno rispetto del Regolamento Europeo 2016/679 (GDPR) e del Codice Privacy italiano.</p>' +
+        '<p>I dati personali forniti volontariamente al momento dell’acquisto (es. nome e indirizzo email per la consegna dei file digitali) sono trattati esclusivamente per l’evasione dell’ordine, l’assistenza clienti e gli adempimenti di legge, nel pieno rispetto del Regolamento Europeo 2016/679 (GDPR) e del Codice Privacy italiano.</p>' +
         '<h3>2. Pagamenti Sicuri</h3>' +
         '<p>I pagamenti sono elaborati tramite piattaforma certificata Hotmart, che supporta PayPal, Apple Pay e carte di credito/debito su connessione cifrata SSL/TLS. Il sito non memorizza né ha accesso diretto ai dati della tua carta o del tuo conto.</p>' +
         '<h3>3. Tipologie di Cookie Utilizzati</h3>' +
