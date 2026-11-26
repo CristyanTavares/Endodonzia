@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="utf-8" />
@@ -7,28 +7,21 @@
   <meta name="description" content="Il tuo ordine è confermato. Segui i passaggi qui sotto per accedere subito alla libreria Atlante Visivo di Endodonzia Clinica e ai bonus esclusivi." />
   <link rel="icon" href="../favicon.png" type="image/png" />
 
-  <!-- Meta Pixel Code -->
+  <!-- GDPR-gated Meta Pixel Config -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1390555636571453');
-    fbq('track', 'PageView');
-    fbq('track', 'Purchase', {
-      content_name: 'Atlante Visivo di Endodonzia Clinica',
-      content_type: 'product',
-      currency: 'EUR'
-    });
+    window.__ENDODONZIA_PIXEL_CONFIG = {
+      extraEvents: [
+        {
+          name: 'Purchase',
+          params: {
+            content_name: 'Atlante Visivo di Endodonzia Clinica',
+            content_type: 'product',
+            currency: 'EUR'
+          }
+        }
+      ]
+    };
   </script>
-  <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1390555636571453&ev=PageView&noscript=1" />
-  </noscript>
-  <!-- End Meta Pixel Code -->
 
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -235,7 +228,7 @@
             <svg class="h-4 w-4 text-brand-green shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/>
             </svg>
-            <span><strong>Garanzia Incondizionata di 7 Giorni:</strong> protetta al 100% da Hotmart.</span>
+            <span><strong>Garanzia Incondizionata di 14 Giorni:</strong> protetta al 100% da Hotmart.</span>
           </div>
         </div>
       </div>
@@ -250,36 +243,25 @@
       </div>
       <h3 class="text-base sm:text-lg font-bold text-foreground">Hai domande o bisogno di aiuto per accedere?</h3>
       <p class="mt-1 text-xs sm:text-sm text-muted-foreground max-w-md mx-auto">
-        Il nostro team di supporto è a tua disposizione per aiutarti con qualsiasi domanda sul tuo ordine o sul download dei file.
+        Controlla l'email di conferma inviata da Hotmart o accedi direttamente alla tua area clienti Hotmart per scaricare i file e ricevere assistenza sul tuo ordine.
       </p>
-
-      <div class="mt-5 flex flex-col sm:flex-row items-center justify-center gap-3">
-        <a 
-          href="https://api.whatsapp.com/send?text=Ciao,%20ho%20appena%20acquistato%20l%27Atlante%20Visivo%20di%20Endodonzia%20Clinica%20e%20ho%20bisogno%20di%20aiuto%20con%20il%20mio%20accesso." 
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 px-6 py-3 font-bold text-white text-sm shadow-md transition-all hover:scale-[1.01]"
-        >
-          <img src="../images/whatsapp.webp" alt="WhatsApp" class="h-5 w-5 object-contain" />
-          <span>Contatta il Supporto via WhatsApp</span>
-        </a>
-      </div>
     </div>
 
     <!-- Footer -->
     <footer class="mt-12 text-center text-xs text-muted-foreground pb-8 border-t border-border pt-6 space-y-2">
       <p>© 2026 Atlante Visivo di Endodonzia Clinica — Tutti i diritti riservati.</p>
       <p class="text-slate-400 max-w-md mx-auto leading-relaxed">
-        Questo prodotto ha esclusivamente finalità didattiche e di consultazione. Hotmart è la piattaforma di pagamento sicuro per questa transazione.
+        Questo prodotto ha esclusivamente finalità didattiche e di consultazione. Hotmart è la piattaforma di pagamento sicuro per questa transazione (PayPal, Apple Pay e carte di credito/debito). Garanzia 14 giorni.
       </p>
+      <div class="flex flex-wrap justify-center gap-4 pt-1">
+        <button type="button" class="underline hover:text-foreground" onclick="window.openPrivacyModal && window.openPrivacyModal()">Privacy &amp; Cookie Policy (GDPR)</button>
+        <button type="button" class="underline hover:text-foreground" onclick="window.openCookiePreferences && window.openCookiePreferences()">Gestisci preferenze cookie</button>
+      </div>
     </footer>
 
   </main>
 
-  <!-- Vercel Web Analytics -->
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
+  <!-- Banner Cookie GDPR & Gestione Consenso (Meta Pixel + Analytics) -->
+  <script defer src="../js/gdpr-cookie-banner.js"></script>
 </body>
 </html>
